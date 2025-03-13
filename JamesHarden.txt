@@ -1,0 +1,14 @@
+Tim Benners Lee = criador da primeira página web
+
+HTML = Hyper Text Markup Language
+
+HTML 2 - 1995
+HTML 3 - 1997
+HTML 4 - 1999
+HTMl 5 - 2004
+
+IDE - VSCODE
+
+EXTENSÂO:
+Material Icon Theme
+Live Server
