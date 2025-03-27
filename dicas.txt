@@ -8,3 +8,7 @@ INICIO 1994 - HAKON WIUM
 INLINE - NUNCA USAR
 INTERNA - NÃO É BOA PRATICA
 EXTERNA - O QUE O MERCADO UTILIZA
+
+id = # (individual)
+
+class = . (coletivo)
