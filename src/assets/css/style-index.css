@@ -12,4 +12,53 @@ body {
     display:flex;
     flex-direction: column;
     gap:10px;
+    padding: 10px;
+}
+
+header{
+    background: yellow;
+    text-align: center;
+    padding: 20px;
+}
+
+#conteudo{
+    background: purple;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    flex: 1;
+}
+
+#conteudo article{
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+}
+
+aside{
+    background: lightblue;
+    padding: 20px;
+    flex: 2;
+}
+footer{
+    background: blue;
+    padding: 40px;
+    color: white;
+}
+/* responsividade */
+
+@media(min-width: 700px) {
+    #container{
+        flex-direction: colum;
+    }
+    #conteudoAside{
+        display: flex;
+        flex-grow: 1;
+    }
+    #conteudo{
+        flex: 2;
+    }
+    aside{
+        flex: 1;
+    }
 }
