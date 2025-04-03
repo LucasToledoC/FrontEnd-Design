@@ -5,7 +5,7 @@
 }
 
 body {
-    background: transparent;
+    background: rgb(82, 80, 88);
 }
 
 #container {
@@ -16,13 +16,13 @@ body {
 }
 
 header{
-    background: yellow;
+    background: white;
     text-align: center;
     padding: 20px;
 }
 
 #conteudo{
-    background: purple;
+    background: rgb(40, 102, 107);
     color: white;
     text-align: center;
     padding: 100px;
@@ -36,12 +36,13 @@ header{
 }
 
 aside{
-    background: lightblue;
+    background: rgb(225, 180, 180);
     padding: 20px;
     flex: 2;
+    color: white;
 }
 footer{
-    background: blue;
+    background: rgb(172, 224, 138);
     padding: 40px;
     color: white;
 }
