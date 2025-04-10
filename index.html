@@ -1,91 +1,110 @@
-<!-- IDENTIFICA A VERSÃO DO NAVEGADOR -->
 <!DOCTYPE html>
-<!-- INICIO DO THML E DEFINIÇÃO DA LINGUAGEM -->
-<html lang="pt-BR">
-<!-- INICIO DO CABEÇALHO     -->
+<html lang="pt-br">
 
 <head>
-    <!-- IDENTIFICA CARACTERES ESPECIAIS E ACENTOS         -->
-    <meta charset="UTF-8" />
-    <!-- IDENTIFICA A RESOLUÇÃO DA LARGURA DO DISPOSITIVO -->
-    <meta name="viewport" content="width=device-width,initial-scale-1.0" />
-
-    <!-- ADICIONANDO ICONE NO TITULO -->
-    <link rel="shortcut icon" href="img/icone2.jfif" />
-
-
-
-    <!-- TITULO DO CABEÇALHO -->
-    <title>Stephen Curry</title>
-
-
-
-
-    <!-- FINAL DO CABEÇALHO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ADICIONANDO ICONE -->
+    <link rel="shortcut icon" href="">
+    <!-- CHAMANDO O CSS EXTERNO -->
+    <link rel="stylesheet" href="./src/css/style-index.css">
+    <title>Loja Griffe</title>
 </head>
-<!-- INICIO DO CORPO DA PÁGINA (CONTEUDO) -->
 
 <body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Roupas</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <div id="conteudo">
+            <main>
+                <article class="produto">
+                    <img src="./src/assets/img/relogioDeBolso.jpg" alt="" />
+                    <h3>Nome Produto 1</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                    <p class="preco">R$ 800,00</p>
+                    <button type="submit">Comprar</button>
+                </article>
 
-    <!-- TITULOS DA PAGINA -->
-    <h1>Escola de Programadores by Stephen Curry </h1>
-    <h2>Seja Bem-vindo a nossa escola by Stephen Curry</h2>
-    <h3>Desenvolvedor Nível 1</h3>
-    <h4>Desenvolvedor Nível 2</h4>
-    <h5>Desenvolvedor Nível 3</h5>
-    <h6>Desenvolvedor Nível 4</h6>
+                <article class="produto">
+                    <img src="./src/assets/img/relogio.jpg" alt="" />
+                    <h3>Nome Produto 2</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                    <p class="preco">R$ 800,00</p>
+                    <button type="submit">Comprar</button>
+                </article>
 
-    <!-- linha divisória -->
-    <hr>
+                <article class="produto">
+                    <img src="./src/assets/img/mochila.png" alt="" />
+                    <h3>Nome Produto 3</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                    <p class="preco">R$ 800,00</p>
+                    <button type="submit">Comprar</button>
+                </article>
 
-    <!-- paragrafos -->
-    <p>Conteúdo de Aula 1</p>
-    <p>Conteúdo de Aula 2</p>
-    <p>Conteúdo de Aula 3</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt error quasi natus doloremque ut, libero
-        reiciendis minima rerum sapiente itaque voluptatem earum aspernatur soluta sequi maxime? Magnam vero at porro!
-    </p>
+                <article class="produto">
+                    <img src="./src/assets/img/jaqueta.jpg" alt="" />
+                    <h3>Nome Produto 4</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur</p>
+                    <p class="preco">R$ 800,00</p>
+                    <button type="submit">Comprar</button>
+                </article>
 
-    <!-- TRATAMENTO DE IMAGENS -->
-    <img src="img/imagemTenis.jpg" alt="tenis em pratelheiras" title="Titulo Tenis" width="400">
+            </main>
+            <aside>
+                <h2>Filtros</h2>
+                <input type="text" placeholder="Pesquisar" />
+                <div class="filtro">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="#">Vestidos</a></li>
+                        <li><a href="#">Sapatos</a></li>
+                        <li><a href="#">Bolsas</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                    </ul>
+                </div>
 
-    <!-- listas ordenadas -->
-    <ol>
-        <li>Conteúdo da Aula1</li>
-        <li>Conteúdo da Aula2</li>
-        <li>Conteúdo da Aula3</li>
-    </ol>
-    <ol type="A">
-        <li>Conteúdo da Aula1</li>
-        <li>Conteúdo da Aula2</li>
-        <li>Conteúdo da Aula3</li>
-    </ol>
+                <div class="filtro">
+                    <input type="range" min="0" max="1000" value="500" />
+                </div>
 
-    <!-- LISTAS NAO ORDENADAS -->
-    <ul>
-        <li>Conteúdo de video 1</li>
-        <li>Conteúdo de video 2</li>
-        <li>Conteúdo de video 3</li>
-    </ul>
-    <ul type="circle">
-        <li>Conteúdo de video 1</li>
-        <li>Conteúdo de video 2</li>
-        <li>Conteúdo de video 3</li>
-    </ul>
+                <div class="filtro">
+                    <h3>Marcas</h3>
+                    <ul>
+                        <li><a href="#">Marca A</a></li>
+                        <li><a href="#">Marca B</a></li>
+                        <li><a href="#">Marca C</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="contato">
+                    <h3>Contato</h3>
+                    <p>Email: contato@email.com</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                </div>
+                <div class="redesSociais">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="direitos">
+                    <p>&copy; 2025 City Griff. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
 
-
-    <!-- FORMULARIOS -->
-    <h2>Dados dos Alunos</h2>
-    <form action="dados.html">
-        <input type="text" placeholder="Digite seu usuario" required />
-        <input type="password" placeholder="Digite sua senha" required />
-        <button type="submit">Enviar</button>
-    </form>
-
-
-    <!-- FINAL DO CORPO DA PÁGINA (CONTEUDO) -->
-</body>
-<!-- FINAL DO HTML -->
-
-</html>
+    </div>
