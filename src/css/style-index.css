@@ -1,0 +1,93 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* VARIAVEIS CSS */
+:root{
+    --color-font1:#fff;
+    --color-font2:#333;
+    --color-font3:rgb(4,28,32);
+    --color-font4:yellow;
+    --gradient:linear-gradient(to top,rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+  
+}
+
+html{
+    /*calcula a base da fonte da pagina e converte para 10 pixels */
+    font-size: 62.5%;
+    /* efeito de suavidade ao fazer o scroll com o mouse */
+    scroll-behavior: smooth;
+}
+body{
+    background: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+nav ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-font1);
+    font-weight: 900;
+    transition: color 0.3s;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+a:hover{
+    color:var(--color-font4)
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem;
+    background-image: var(--gradient), url(../assets/img/carro.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    font-size: 4rem;
+    position: relative;
+}
+.header-menu{
+    display: flex;
+    gap: 20px;
+}
+span{
+    color: var(--color-font4);
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem ;
+}
+
+/* responsividade */
+@media(width <=1024px){
+    .header-menu{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        text-align: center;
+        flex-direction: column;
+    }
+    #titulo{
+        font-size: 2rem;
+    }
+}
