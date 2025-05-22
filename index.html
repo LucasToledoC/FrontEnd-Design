@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 08</title>
-    <link rel="stylesheet" href="./src/css/style-index.css">
+    <title>Projeto 6</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
-    <section class="hero">
-        <header>
-            <h1><span>Loja</span>Cars</h1>
-            <nav>
-                <ul class="header-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Carros</a></li>
-                    <li><a href="#">Lojas</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h2 id="titulo">A ENERGIA QUE<span>MOVE SEU VEICULO</span></h2>
-    </section>
+    <main id="container">
+        <div class="video-container">
+            <video autoplay loop muted src="./src/assets/videos/video.mp4"></video>
+            <div id="sombra"></div>
+        </div>
+        <div class="login-container">
+            <header>
+                <h1>Login</h1>
+            </header>
+            <form id="form-login">
+                <article class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </article>
+                <article class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </article>
+                <div id="btns">
+                    <button type="submit" id="btnEntrar">Entrar</button>
+                    <button id="btnTrocar">Trocar</button>
+                </div>
 
-
+            </form>
+        </div>
+    </main>
 
     <script src="./src/js/script.js"></script>
 </body>
